@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
         @hasSection('title')
 
             <title>@yield('title') - {{ config('app.name') }}</title>
@@ -24,7 +25,7 @@
         <script>
             tinymce.init({
                 selector: 'textarea#blog-editor',
-                height: 300,
+                height: 400,
                 plugins: 'powerpaste advcode table lists checklist link image emoticons fullscreen',
                 toolbar: 'undo redo | blocks| bold italic | bullist numlist checklist | code | table link image emoticons fullscreen',
                 automatic_uploads: true,
