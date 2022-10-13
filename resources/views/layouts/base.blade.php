@@ -24,7 +24,7 @@
         <script>
             tinymce.init({
                 selector: 'textarea#blog-editor',
-                height: 400,
+                height: 300,
                 plugins: 'powerpaste advcode table lists checklist link image emoticons fullscreen',
                 toolbar: 'undo redo | blocks| bold italic | bullist numlist checklist | code | table link image emoticons fullscreen',
                 automatic_uploads: true,
