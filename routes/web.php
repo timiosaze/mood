@@ -4,6 +4,7 @@ use App\Http\Controllers\Auth\EmailVerificationController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ImageController;
+use App\Http\Controllers\PersonController;
 use App\Http\Livewire\Auth\Login;
 use App\Http\Livewire\Auth\Passwords\Confirm;
 use App\Http\Livewire\Auth\Passwords\Email;
@@ -67,5 +68,8 @@ Route::get('/blogs/{blog}', [BlogController::class, 'show'])->name('blog_show');
 Route::get('/blogs/{blog}/edit', [BlogController::class, 'edit'])->name('blog_edit');
 Route::put('/blogs/{blog}', [BlogController::class, 'update'])->name('blog_update');
 Route::delete('/blogs/{blog}', [BlogController::class, 'destroy'])->name('blog_destroy');
+
+Route::get('/persons', [PersonController::class, 'person']);
+
 
 Route::post('/upload', [ImageController::class, 'upload'])->name('image_upload');

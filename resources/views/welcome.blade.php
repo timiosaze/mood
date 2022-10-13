@@ -57,4 +57,9 @@
             </div>
         </div>
     </div>
+    <x-sort-icon
+        field="email"
+        :sortField = "$sortField"
+        :sortAsc = "$sortAsc"
+    />
 @endsection
