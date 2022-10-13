@@ -18,6 +18,7 @@ class PersonFactory extends Factory
     {
         return [
             //
+            
             'name' => fake()->name(),
             'age' => fake()->numberBetween($min = 22, $max = 54),
             'gender' => fake()->randomElement($array = array ('male','female')),
