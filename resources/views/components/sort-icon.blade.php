@@ -1,4 +1,3 @@
-<span>{{ $field }} yes
 @if($sortField != $field)
     <span></span>
 @else
@@ -12,4 +11,3 @@
         </svg>
     @endif
 @endif
-</span>
