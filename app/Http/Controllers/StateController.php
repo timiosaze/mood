@@ -10,7 +10,7 @@ class StateController extends Controller
 {
     public function allstates()
     {
-        return StateResource::collection(State::all());
+        // return StateResource::collection(State::all());
     }
     /**
      * Display a listing of the resource.
@@ -20,6 +20,7 @@ class StateController extends Controller
     public function index()
     {
         //
+        return StateResource::collection(State::all());
     }
 
     /**

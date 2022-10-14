@@ -21,4 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/allpersons', [PersonController::class, 'index']);
-Route::get('/allstates', [StateController::class, 'allstates']);
+Route::get('/allstates', [StateController::class, 'index']);
