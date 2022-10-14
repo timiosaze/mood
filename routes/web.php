@@ -25,7 +25,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/', 'welcome')->name('home');
-Route::view('/test', 'test')->name('test');
+Route::view('/test', 'candidate.show')->name('test');
 Route::view('/blog/create', 'blog.create')->name('blog');
 
 Route::middleware('guest')->group(function () {

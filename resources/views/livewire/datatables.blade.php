@@ -70,47 +70,31 @@
                 <th class="bg-gray-100 sticky top-0 border-b border-gray-200 px-6 py-2 text-gray-600 font-bold tracking-wider uppercase text-xs">
                     <div class="flex items-center">
                         <button wire:click="sortBy('age')">Age</button>
-                        <x-sort-icon field="age" :sortField = "$sortField" :sortAsc = "$sortAsc" />
+                        <x-sort-icon field="age" :sortField="$sortField" :sortAsc="$sortAsc" />
                     </div>
                 </th>
                 <th class="bg-gray-100 sticky top-0 border-b border-gray-200 px-6 py-2 text-gray-600 font-bold tracking-wider uppercase text-xs">
                     <div class="flex items-center">
                         <button wire:click="sortBy('email')">Email</button>
-                        <x-sort-icon
-                            field="email"
-                            :sortField = "$sortField"
-                            :sortAsc = "$sortAsc"
-                        />
+                        <x-sort-icon field="email" :sortField="$sortField" :sortAsc="$sortAsc" />
                     </div> 
                 </th>
                 <th class="bg-gray-100 sticky top-0 border-b border-gray-200 px-6 py-2 text-gray-600 font-bold tracking-wider uppercase text-xs">
                     <div class="flex items-center">
                         <button>Address</button>
-                        <x-sort-icon
-                            field="address"
-                            :sortField = "$sortField"
-                            :sortAsc = "$sortAsc"
-                        />
+                        <x-sort-icon field="address" :sortField="$sortField" :sortAsc="$sortAsc" />
                     </div>
                 </th>
                 <th class="bg-gray-100 sticky top-0 border-b border-gray-200 px-6 py-2 text-gray-600 font-bold tracking-wider uppercase text-xs">
                     <div class="flex items-center">
                         <button wire:click="sortBy('gender')">Gender</button>
-                        <x-sort-icon
-                            field="gender"
-                            :sortField = "$sortField"
-                            :sortAsc = "$sortAsc"
-                        />
+                        <x-sort-icon field="gender" :sortField="$sortField" :sortAsc="$sortAsc" />
                     </div>
                 </th>
                 <th class="bg-gray-100 sticky top-0 border-b border-gray-200 px-6 py-2 text-gray-600 font-bold tracking-wider uppercase text-xs">
                     <div class="flex items-center">
                         <button wire:click="sortBy('salary')">Salary</button>
-                        <x-sort-icon
-                            field="salary"
-                            :sortField = "$sortField"
-                            :sortAsc = "$sortAsc"
-                        />
+                        <x-sort-icon field="salary" :sortField="$sortField" :sortAsc="$sortAsc" />
                     </div>
                 </th>
 
