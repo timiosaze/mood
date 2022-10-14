@@ -8,12 +8,12 @@ export default () => ({
         this.getStates()
         setTimeout(() => {
             this.addValue()
-          }, 500);
+          }, 1000);
     },
     open: false,
     data: [],
     getStates() {
-        axios.get('http://127.0.0.1:8000/api/allstates')
+        axios.get('https://mood-test.herokuapp.com/api/allstates')
         .then(response => this.data = response.data.data)
         .catch(error =>  console.log(error));
         
