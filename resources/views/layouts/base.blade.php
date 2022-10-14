@@ -16,6 +16,7 @@
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <link rel="stylesheet" href="{{asset('css/styles.css')}}">
         <script src="https://cdn.tiny.cloud/1/r1bh65yckxcg92ny6rcgtoc7wirrlshksq6279agmziz46bc/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 

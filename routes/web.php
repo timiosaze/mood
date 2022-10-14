@@ -5,6 +5,7 @@ use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\PersonController;
+use App\Http\Controllers\SupporterController;
 use App\Http\Livewire\Auth\Login;
 use App\Http\Livewire\Auth\Passwords\Confirm;
 use App\Http\Livewire\Auth\Passwords\Email;
@@ -26,6 +27,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome')->name('home');
 Route::view('/test', 'candidate.show')->name('test');
+Route::view('/test/create', 'candidate.create')->name('test.create');
+
 Route::view('/blog/create', 'blog.create')->name('blog');
 
 Route::middleware('guest')->group(function () {
@@ -73,3 +76,4 @@ Route::get('/persons', [PersonController::class, 'person']);
 
 
 Route::post('/upload', [ImageController::class, 'upload'])->name('image_upload');
+Route::post('/save', [SupporterController::class, 'save'])->name('save');
