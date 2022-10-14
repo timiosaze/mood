@@ -5,14 +5,14 @@ window.axios = axios;
 export default () => ({
     init() {
         console.log('I am called automatically')
-        this.getPersons()
+        this.getStates()
         setTimeout(() => {
             this.addValue()
           }, 500);
     },
     open: false,
     data: [],
-    getPersons() {
+    getStates() {
         axios.get('http://127.0.0.1:8000/api/allstates')
         .then(response => this.data = response.data.data)
         .catch(error =>  console.log(error));
